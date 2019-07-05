@@ -1,0 +1,25 @@
+{
+  "name": "president-bot",
+  "version": "1.0.0",
+  "description": "Twitter bot for fictional presidential candidate",
+  "main": "presidentBot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marycriv/presidential-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marycriv/presidential-bot/issues"
+  },
+  "homepage": "https://github.com/marycriv/presidential-bot#readme",
+  "dependencies": {
+    "core-util-is": "^1.0.2",
+    "node-fetch": "^2.6.0",
+    "save": "^2.4.0",
+    "twit": "^2.2.11"
+  }
+}

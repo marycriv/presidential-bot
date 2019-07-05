@@ -1,2 +1,2 @@
 # presidential-bot
-Presidential candidate twitter bot.
+Twitter bot for the fictional presidential candidate, William Abbot. 
