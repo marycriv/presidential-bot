@@ -45,7 +45,7 @@ let tweet = function() {
 }
 
 tweet();
-setInterval(tweet, 7200000);
+setInterval(tweet, 216000000);
 //
 // function tweetMaker() {
 //   fetch('/scripts.json')
