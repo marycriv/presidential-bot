@@ -44,7 +44,11 @@ let tweet = function() {
   });
 }
 
+
+// Initial tweet
 tweet();
+
+// Interval set for approx. 6hrs
 setInterval(tweet, 21600000);
 //
 // function tweetMaker() {
