@@ -16,17 +16,21 @@ const body = ["today is a sad day for America.", "today will go down in history.
 
 const footer = ["", "", "", "", "", "Truth, justice, and the American way.", "That is the American way.", "I'm proud to be an American.", "Long may our banner wave.", "From sea to shining sea.", "The fight continues.", "#Abbot2020", "We are all in this together.", "Never surrender.", "This is what I am fighting for.", "#AbbotForAmerica", "Congress must do its job.", "I must do my duty to my country.", "We will not go quietly into the night!", "A change is coming fast in Washington.", "God bless America.", "Now is the time to make real the promises of democracy.", "As for me, give me liberty or give me death.", "And you can quote me on that.", "It's time for Abbot in office.", "That is what the founding fathers were after.", "What can I do for my country?", "Let's all do our part.", "Ask not what your country can do for you — ask what you can do for your country.", "What's next?", "#VoteAbbot", "#GetRegisteredToday", "#ExerciseYourRight"]
 
+// Selects a random integer which will be used as the index of a header, body or footer
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
+
 let tweet = function() {
+  // Assigns the header body and footer indexes
   let h = getRandomInt(0, header.length)
   let b = getRandomInt(0, body.length)
   let f = getRandomInt(0, footer.length)
 
+// Posts new status to Twitter
   Twitter.post('statuses/update', {
     status: header[h] + " " + body[b] + " " + footer[f]
   }, function(err, response) {
