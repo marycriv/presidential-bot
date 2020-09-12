@@ -18,7 +18,7 @@
   "homepage": "https://github.com/marycriv/presidential-bot#readme",
   "dependencies": {
     "core-util-is": "^1.0.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "save": "^2.4.0",
     "twit": "^2.2.11"
   }
